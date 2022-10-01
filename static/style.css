@@ -38,11 +38,16 @@ figure {
 	margin: 0;
 	padding: 0;
 }
+	figure {
+		border-radius: 3px;
+		overflow: hidden;
+	}
 figcaption {
 	font-size: 1rem;
 	text-align: center;
 	color: #777;
 	font-style: italic;
+	margin: 0;
 }
 
 .center {
