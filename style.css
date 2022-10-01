@@ -30,6 +30,21 @@ a {
 		color: inherit;
 	}
 
+img {
+	max-width: 100%;
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+}
+figcaption {
+	font-size: 1rem;
+	text-align: center;
+	color: #777;
+	font-style: italic;
+}
+
 .center {
 	text-align: center;
 }
