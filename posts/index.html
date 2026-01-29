@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Elephants By The Lake (EBTL) - A forest restoration project in the Eastern Ghats of Tamil Nadu</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="A 68 acre permaculture based land and ecosystem restoration project by the Rainmatter Foundation" />
+    <meta name="keywords" content />
+    <meta name="viewport" content="width=device-width, initial-scale=1 />
+    <link rel="icon" type="image/png" sizes="64x64" href="/static/images/favicon.png" />
+    <link rel="apple-touch-icon" href="/static/images/favicon.png" />
+    <link rel="image_src" href="/static/images/thumb.png" />
+    <meta property="og:image" content="/static/images/thumb.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+    <script src="/static/js/feather.min.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <header class="header">
+                <a href="/"><img src="/static/images/logo.svg" alt="EBTL" /></a>
+                <a href="#" id="burger"><span></span><span></span><span></span></a>
+                <nav id="mainnav">
+                    <a
+                        href="/restoration-project"
+                        
+                    >Restoration</a>
+                    <a
+                        href="/cegs"
+                        
+                    >Centre for Eastern Ghats Studies</a>
+                    <a
+                        href="/livelihood-project"
+                        
+                    >Livelihoods Project</a>
+                    <a
+                        href="/about"
+                        
+                    >About</a>
+                    <a
+                        href="/gallery"
+                        
+                    >Gallery</a>
+                </nav>
+            </header>
+        </div>
+        <!-- 
+            <h1 class="text-center">Elephants By The Lake</h1>
+         -->
+        
+<h1 class="title">
+  List of blog posts
+</h1>
+<ul>
+  <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->  
+  
+  <li><a href="https://example.com/posts/second/">My second post</a></li>
+  
+  <li><a href="https://example.com/posts/first/">My first post</a></li>
+  
+</ul>
+        
+    </div>
+    <footer>
+        <section>
+            <div class="container">
+                <div class="footer-container">
+                    <div>
+                        <a href="/"><img class="ebtl-logo" src="/static/images/logo.svg" alt="EBTL" /></a>
+                        <h4>Elephants by the lake!</h4>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/elephantsbythelake?igsh=OXFkMG9nMndlYzVz" target="_blank" class="icon-circle"><i data-feather="instagram"></i></a>
+                            <a href="https://chat.whatsapp.com/F46a3Za1HzBAXEw5D6wIje" target="_blank" class="icon-circle">
+                                <img class="whatsapp-logo" src="/static/images/whatsapp-logo.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <nav>
+                        <a href="/">Home</a>
+                        <a href="/gallery">Gallery</a>
+                        <a href="/cegs">Centre for Eastern Ghats Studies</a>
+                        <a href="/get-involved">Get involved</a>
+                        <a href="/about">About</a>
+                        <a href="https://drive.google.com/drive/folders/1elq027Kx8gO7KEtrHac30TpGvNOAU6Wz">Newsletter</a>
+                    </nav>
+                    <div>
+                        <p class="address"><span class="icon-circle"><i data-feather="map-pin"></i></span>P5MM+H9, Budhimutlu,<br>Tamil Nadu 635121</p>
+                        <a href="mailto:varun.b@rainmatter.org" class="email"><span class="icon-circle"><i data-feather="mail"></i></span>varun.b@rainmatter.org</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script>feather.replace();</script>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const nav = document.getElementById('mainnav');
+
+        // Prevent jump to top on click
+        burger.addEventListener('click', function(e) {
+            e.preventDefault();
+            burger.classList.toggle('active');
+            nav.classList.toggle('show');
+        });
+
+        // (Optional) Clicking a nav link closes the menu on mobile
+        nav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                burger.classList.remove('active');
+                nav.classList.remove('show');
+            });
+        });
+    </script>
+</body>
+
+</html>
