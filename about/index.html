@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Elephants By The Lake (EBTL) - A forest restoration project in the Eastern Ghats of Tamil Nadu</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="A 68 acre permaculture based land and ecosystem restoration project by the Rainmatter Foundation" />
+    <meta name="keywords" content />
+    <meta name="viewport" content="width=device-width, initial-scale=1 />
+    <link rel="icon" type="image/png" sizes="64x64" href="/static/images/favicon.png" />
+    <link rel="apple-touch-icon" href="/static/images/favicon.png" />
+    <link rel="image_src" href="/static/images/thumb.png" />
+    <meta property="og:image" content="/static/images/thumb.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+    <script src="/static/js/feather.min.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <header class="header">
+                <a href="/"><img src="/static/images/logo.svg" alt="EBTL" /></a>
+                <a href="#" id="burger"><span></span><span></span><span></span></a>
+                <nav id="mainnav">
+                    <a
+                        href="/restoration-project"
+                        
+                    >Restoration</a>
+                    <a
+                        href="/cegs"
+                        
+                    >Centre for Eastern Ghats Studies</a>
+                    <a
+                        href="/livelihood-project"
+                        
+                    >Livelihoods Project</a>
+                    <a
+                        href="/about"
+                        class="active"
+                    >About</a>
+                    <a
+                        href="/gallery"
+                        
+                    >Gallery</a>
+                </nav>
+            </header>
+        </div>
+        <!-- 
+            <h1 class="text-center">EBTL About</h1>
+         -->
+        
+<div id="start-gradient"></div>
+<div class="cover-section-container about">
+	<div id="modalOverlay" class="modal-overlay"></div>
+	<section class="cover-section">
+		<div class="container cover-main">
+			<div class="six columns">
+				<h1>About US</h1>
+				<p>EBTL is designed and managed by a ground team that lives on site with the support of Rainmatter foundation.  Our primary focus in the initial three years were developing a native tree nursery and also understanding the land with respect to water flows during monsoons. We have also intervened with mix of strategies like active tree planting, removal of invasives and natural regeneration of land. For this we have also collaborated with a few practitioners whose names are mentioned below.</p>
+				<p>Supported by Rainmatter Foundation</p>
+				<img class="rainmatter-logo" src="/static/images/rainmatter-logo.png">
+			</div>
+			<div class="six columns">
+				<img src="/static/images/about-us.webp">
+			</div>
+		</div>
+	</section>
+	<section class="ebtl-core-team container-section">
+		<div class="container">
+			<h1>EBTL core team</h1>
+			<div class="row members-row" id="members-row"></div>
+		</div>
+	</section>
+	<section class="ebtl-collaborators container-section apply-gradient">
+		<div class="container">
+			<h1>Collaborators</h1>
+			<div class="row members-row" id="collaborators-row"></div>
+		</div>
+	</section>
+</div>
+
+<script>
+const coreTeam = [
+	{
+		img: "/static/images/varun.png",
+		name: "Varun Balakrishnan",
+		title: "Program manager",
+		shortname: "varun",
+		description: `
+			<p>Post realising the lack of interest in my engineering degree, I spent many years travelling and volunteering in animal shelters and wildlife rescue centres. The diversity in the natural world has always fascinated me, how should one comprehend the many ways in which the same world is perceived by different life forms? And how as a species we find our position in this intricate web of beings. Living and working in EBTL gives me a unique opportunity to be a student of the natural world and pursue my different passions- art, farming, wildlife, forests and many more interests yet to be discovered.</p>`
+	},
+	{
+		img: "/static/images/aruna.png",
+		name: "Aruna Gamuz",
+		title: "Ecological consultant",
+		shortname: "aruna",
+		description: `
+			<p>I have  always enjoyed spending time in nature and have been lucky to grow up with lots of time outdoors.</p>
+			<p>For a few years now have been working on restoration in degraded land areas. Have been  documenting flora, understanding past human  landscape interactions, raising native plant nurseries and doing planting.</p>
+			<p>This has been in Eastern Ghats hill ranges of Krishnagiri and more recently in the aslo in the  Nilgiris in abandoned coffee estates. At EBTL, I lead the seed collection work and established the nursery. I also took care of the planting work and managing the restoration site. Currently I focus on carrying out Monitoring and evaluation of restored sites at EBTL.</p>`
+	},
+	{
+		img: "/static/images/anil.png",
+		name: "Anil Gopana",
+		title: "Ecological consultant",
+		shortname: "anil",
+		description: `
+			<p>The network of interconnectedness within nature has always surprised me. In 2021, I did a 3 month horticulture course in Auroville botanical gardens after which I volunteered with The Forestway in Thiruvanamalai. I have spent a lot of time exploring the dry deciduous forests of the south Deccan plateau, and being a part of the EBTL on ground team enables me to explore even further. Currently I manage the native flora nursery in EBTL and also work the citizen science programmes. I look forward to going more into the forests around, teaching myself about the life in them and in the process contribute to the restoration work on ground.</p>`
+	}
+];
+const collaborators = [
+	{
+		img: "/static/images/jayasri.png",
+		name: "Jayasri Sridhar",
+		title: "Creative lead",
+		shortname: "jayasri",
+		description: `
+			<p>I’m a filmmaker, designer and writer with a passion for academia and a degree in Film and Video Communication from the National Institute of Design Ahmedabad. I’m also a Hindustani classical musician who loves composing and performing. My creative practice leans towards social, ecological and more-than-human themes, and spans several mediums, including moving images, words, sound, space and art. As an avid reader and travel enthusiast, I bring a deep love of learning to everything I do, and enjoy working with collaborators from across the world.</p>`
+	},
+	{
+		img: "/static/images/shreeram.png",
+		name: "Shreeram MV",
+		title: "Wildlife photographer",
+		shortname: "shreeram",
+		description: `
+			<p>I am a professional wildlife photographer, photography mentor and naturalist. After an engineering degree and an MBA, I worked in the corporate world briefly before I realised my passion for wildlife and photography. I have travelled to wildlife habitats around the world, including rainforests, polar regions, high altitude Himalayas, deserts and islands. I build photography narratives that weave in creative perspectives along with natural history and conservation principles. I have published my stories in diverse print and digital magazines such as National Geographic Traveller, Sanctuary Asia, Saevus, Lonely Planet India, Round Glass Sustain, Nature inFocus and JLR Explore.</p>
+			<p>I mentors enthusiastic photographers on wildlife photography tours across the world.As a naturalist, I have trained and certified naturalists across Karnataka in association with Jungle Lodges and Resorts and Karnataka Eco-tourism Development Board. I was also part of a team that described 2 new species of geckos from the dry regions of Karnataka.</p>
+			<p>At EBTL, I am documenting and photographing wildlife across the campus and surrounding areas to gain a better understanding of the wildlife in the region and the impact of restoration initiatives in enhancing their habitat.</p>`
+	}
+	// {
+	// 	img: "/static/images/aliston.png",
+	// 	name: "Aliston Taxeira",
+	// 	title: "Ecological consultant",
+	// 	shortname: "aliston",
+	// 	description: `
+	// 		<p>I have  always enjoyed spending time in nature and have been lucky to grow up with lots of time outdoors.</p>
+	// 		<p>For a few years now have been working on restoration in degraded land areas. Have been  documenting flora, understanding past human  landscape interactions, raising native plant nurseries and doing planting.</p>
+	// 		<p>This has been in Eastern Ghats hill ranges of Krishnagiri and more recently in the aslo in the  Nilgiris in abandoned coffee estates. At EBTL, I lead the seed collection work and established the nursery. I also took care of the planting work and managing the restoration site. Currently I focus on carrying out Monitoring and evaluation of restored sites at EBTL.</p>`
+	// }
+];
+
+// const openBtn = document.getElementById('openModalBtn');
+const overlay = document.getElementById('modalOverlay');
+
+const htmlOne = coreTeam.map((person, idx) => `
+  <div class="four columns" data-index="${idx}">
+    <img src="/static/images/profile-light/${person.shortname}.png">
+	<div class="person-detail">
+		<h5>${person.name}</h5>
+		<label>${person.title}</label>
+	</div>
+  </div>
+`).join('');
+document.getElementById('members-row').innerHTML = htmlOne;
+
+// Event delegation:
+document.getElementById('members-row').addEventListener('click', function(e) {
+  const target = e.target.closest('.four.columns');
+  if (target) {
+    const idx = target.getAttribute('data-index');
+    const person = coreTeam[idx];
+	overlay.classList.add('active');
+
+	const modal = `<div class="modal">
+		<div class="flex modal-profile-container">
+			<div class="modal-profile">
+				<img src="/static/images/profile/${person.shortname}.png">
+				<div>
+					<h5>${person.name}</h5>
+					<label>${person.title}</label>
+				</div>
+			</div>
+			<div class="modal-details">${person.description}</div>
+			<span data-feather="x" class="close-btn" id="closeModalBtn">&times;</span>
+		</div>
+	</div>`
+
+	document.getElementById('modalOverlay').innerHTML = modal;
+
+	const closeBtn = document.getElementById('closeModalBtn');
+	closeBtn.onclick = () => {
+		console.log("online")
+		document.getElementById('modalOverlay').classList.remove('active');
+	};
+  }
+});
+
+const htmlTwo = collaborators.map((person, idx) => `
+  <div class="four columns" data-index="${idx}">
+    <img src="/static/images/profile-light/${person.shortname}.png">
+	<div class="person-detail">
+		<h5>${person.name}</h5>
+		<label>${person.title}</label>
+	</div>
+  </div>
+`).join('');
+
+document.getElementById('collaborators-row').innerHTML = htmlTwo;
+
+// Event delegation:
+document.getElementById('collaborators-row').addEventListener('click', function(e) {
+  const target = e.target.closest('.four.columns');
+  if (target) {
+    const idx = target.getAttribute('data-index');
+    const person = collaborators[idx];
+    overlay.classList.add('active');
+
+	const modal = `<div class="modal">
+		<div class="flex modal-profile-container">
+			<div class="modal-profile">
+				<img src="/static/images/profile/${person.shortname}.png">
+				<div>
+					<h5 style="margin: 0;">${person.name}</h5>
+					<label>${person.title}</label>
+				</div>
+			</div>
+			<div class="modal-details">${person.description}</div>
+			<span data-feather="x" class="close-btn" id="closeModalBtn">&times;</span>
+		</div>
+	</div>`
+
+	document.getElementById('modalOverlay').innerHTML = modal;
+
+	const closeBtn = document.getElementById('closeModalBtn');
+	closeBtn.onclick = () => {
+		document.getElementById('modalOverlay').classList.remove('active');
+	};
+  }
+});
+
+	// Close modal when clicking outside the modal content
+	overlay.onclick = function(e) {
+	  if (e.target === overlay) {
+		overlay.classList.remove('active');
+	  }
+	};
+	// ESC key to close modal (optional)
+	document.addEventListener('keydown', function(e) {
+	  if (e.key === "Escape") {
+		overlay.classList.remove('active');
+	  }
+	});
+  </script>
+        
+    </div>
+    <footer>
+        <section>
+            <div class="container">
+                <div class="footer-container">
+                    <div>
+                        <a href="/"><img class="ebtl-logo" src="/static/images/logo.svg" alt="EBTL" /></a>
+                        <h4>Elephants by the lake!</h4>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/elephantsbythelake?igsh=OXFkMG9nMndlYzVz" target="_blank" class="icon-circle"><i data-feather="instagram"></i></a>
+                            <a href="https://chat.whatsapp.com/F46a3Za1HzBAXEw5D6wIje" target="_blank" class="icon-circle">
+                                <img class="whatsapp-logo" src="/static/images/whatsapp-logo.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <nav>
+                        <a href="/">Home</a>
+                        <a href="/gallery">Gallery</a>
+                        <a href="/cegs">Centre for Eastern Ghats Studies</a>
+                        <a href="/get-involved">Get involved</a>
+                        <a href="/about">About</a>
+                        <a href="https://drive.google.com/drive/folders/1elq027Kx8gO7KEtrHac30TpGvNOAU6Wz">Newsletter</a>
+                    </nav>
+                    <div>
+                        <p class="address"><span class="icon-circle"><i data-feather="map-pin"></i></span>P5MM+H9, Budhimutlu,<br>Tamil Nadu 635121</p>
+                        <a href="mailto:varun.b@rainmatter.org" class="email"><span class="icon-circle"><i data-feather="mail"></i></span>varun.b@rainmatter.org</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script>feather.replace();</script>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const nav = document.getElementById('mainnav');
+
+        // Prevent jump to top on click
+        burger.addEventListener('click', function(e) {
+            e.preventDefault();
+            burger.classList.toggle('active');
+            nav.classList.toggle('show');
+        });
+
+        // (Optional) Clicking a nav link closes the menu on mobile
+        nav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                burger.classList.remove('active');
+                nav.classList.remove('show');
+            });
+        });
+    </script>
+</body>
+
+</html>
